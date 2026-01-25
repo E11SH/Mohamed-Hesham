@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohamed Hesham Esmat | ML Engineer & Developer</title>
-    <meta name="description" content="Mohamed Hesham Esmat - Machine Learning Engineer, Frontend Developer, and Automation Specialist. Specialized in TensorFlow, Python, and AI solutions.">
+    <meta name="description"
+        content="Mohamed Hesham Esmat - Machine Learning Engineer, Frontend Developer, and Automation Specialist. Specialized in TensorFlow, Python, and AI solutions.">
     <meta property="og:title" content="Mohamed Hesham Esmat | Portfolio">
     <meta property="og:description" content="Machine Learning Engineer & Developer specializing in AI and automation">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="github-integration.js" defer></script>
     <style>
         * {
             margin: 0;
@@ -41,7 +44,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: 
+            background-image:
                 linear-gradient(rgba(26, 41, 71, 0.03) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(26, 41, 71, 0.03) 1px, transparent 1px);
             background-size: 50px 50px;
@@ -50,8 +53,13 @@
         }
 
         @keyframes gridMove {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(50px, 50px); }
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(50px, 50px);
+            }
         }
 
         .particles {
@@ -78,12 +86,15 @@
                 transform: translateY(100vh) translateX(0) scale(0);
                 opacity: 0;
             }
+
             10% {
                 opacity: 0.15;
             }
+
             90% {
                 opacity: 0.15;
             }
+
             100% {
                 transform: translateY(-100px) translateX(100px) scale(1);
                 opacity: 0;
@@ -127,9 +138,19 @@
         }
 
         @keyframes orbFloat {
-            0%, 100% { transform: translate(0, 0) scale(1); }
-            33% { transform: translate(50px, -50px) scale(1.1); }
-            66% { transform: translate(-30px, 30px) scale(0.9); }
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            33% {
+                transform: translate(50px, -50px) scale(1.1);
+            }
+
+            66% {
+                transform: translate(-30px, 30px) scale(0.9);
+            }
         }
 
         nav {
@@ -149,6 +170,7 @@
                 transform: translateY(-100%);
                 opacity: 0;
             }
+
             to {
                 transform: translateY(0);
                 opacity: 1;
@@ -246,8 +268,17 @@
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 0.3; transform: translate(-50%, -50%) scale(1); }
-            50% { opacity: 0.6; transform: translate(-50%, -50%) scale(1.1); }
+
+            0%,
+            100% {
+                opacity: 0.3;
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            50% {
+                opacity: 0.6;
+                transform: translate(-50%, -50%) scale(1.1);
+            }
         }
 
         .hero-content {
@@ -281,8 +312,15 @@
         }
 
         @keyframes avatarGlow {
-            0%, 100% { box-shadow: 0 0 30px rgba(58, 111, 181, 0.3); }
-            50% { box-shadow: 0 0 50px rgba(58, 111, 181, 0.6); }
+
+            0%,
+            100% {
+                box-shadow: 0 0 30px rgba(58, 111, 181, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 0 50px rgba(58, 111, 181, 0.6);
+            }
         }
 
         .hero h1 {
@@ -298,8 +336,15 @@
         }
 
         @keyframes textGlow {
-            0%, 100% { filter: brightness(1); }
-            50% { filter: brightness(1.2); }
+
+            0%,
+            100% {
+                filter: brightness(1);
+            }
+
+            50% {
+                filter: brightness(1.2);
+            }
         }
 
         .typing-container {
@@ -324,7 +369,9 @@
         }
 
         @keyframes blink {
-            50% { opacity: 0; }
+            50% {
+                opacity: 0;
+            }
         }
 
         .hero .cta-button {
@@ -711,9 +758,11 @@
             0% {
                 box-shadow: 0 0 0 0 rgba(58, 111, 181, 0.4);
             }
+
             50% {
                 box-shadow: 0 0 0 15px rgba(58, 111, 181, 0);
             }
+
             100% {
                 box-shadow: 0 0 0 0 rgba(58, 111, 181, 0);
             }
@@ -912,7 +961,7 @@
             transform: translateY(-3px);
             box-shadow: 0 5px 20px rgba(58, 111, 181, 0.3);
         }
-       
+
         .download-cv-btn {
             position: fixed;
             top: 1.5rem;
@@ -1021,8 +1070,15 @@
         }
 
         @keyframes scrollDown {
-            0% { opacity: 1; transform: translateX(-50%) translateY(0); }
-            100% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+            0% {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateX(-50%) translateY(20px);
+            }
         }
 
         @media (max-width: 768px) {
@@ -1068,10 +1124,12 @@
         }
     </style>
 </head>
+
 <body>
     <div class="progress-bar" id="progressBar"></div>
-    
-    <a href="https://drive.google.com/file/d/1zQTY3w2fVI4DvIogfiRTCcqe-JFTOeZT/view?usp=sharing" download="Mohamed_Hesham_Esmat_CV.pdf" class="download-cv-btn" id="downloadCV">
+
+    <a href="https://drive.google.com/file/d/1-TEJygWMZtXCeSZqXBCFvNFQMxyKpUg-/view?usp=sharing" target="_blank"
+        class="download-cv-btn" id="downloadCV">
         <i class="fas fa-download"></i> Download CV
     </a>
 
@@ -1098,7 +1156,7 @@
     <div class="container">
         <section id="home" class="hero">
             <div class="hero-content">
-                
+
                 <h1>MOHAMED HESHAM ESMAT</h1>
                 <div class="typing-container">
                     <p class="subtitle"><span id="typedText"></span><span class="typing-cursor"></span></p>
@@ -1106,7 +1164,8 @@
                 <div class="contact-links">
                     <a href="tel:+201064787864"><i class="fas fa-phone"></i> +20 106 478 7864</a>
                     <a href="mailto:mhesham200366@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-                    <a href="https://www.linkedin.com/in/mohamed-hesham-23327630b/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/mohamed-hesham-23327630b/" target="_blank"><i
+                            class="fab fa-linkedin"></i> LinkedIn</a>
                     <a href="https://github.com/E11SH" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                 </div>
             </div>
@@ -1115,11 +1174,11 @@
         <section id="stats" style="min-height: auto; padding: 3rem 0;">
             <div class="stats-section">
                 <div class="stat-card">
-                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-number" data-target="11">0</div>
                     <div class="stat-label">Projects Completed</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-number" data-target="15">0</div>
                     <div class="stat-label">Technologies</div>
                 </div>
                 <div class="stat-card">
@@ -1134,21 +1193,25 @@
             <div class="card">
                 <p class="bio-text">
                     <i class="fas fa-quote-left" style="color: var(--glow-blue); margin-right: 0.5rem;"></i>
-                    Passionate Machine Learning Engineer and Developer with a strong foundation in AI, automation, and frontend development. 
-                    Experienced in building predictive models, neural networks, and interactive dashboards. 
+                    Passionate Machine Learning Engineer and Developer with a strong foundation in AI, automation, and
+                    frontend development.
+                    Experienced in building predictive models, neural networks, and interactive dashboards.
                     Committed to leveraging technology to solve real-world problems and create impactful solutions.
                     <i class="fas fa-quote-right" style="color: var(--glow-blue); margin-left: 0.5rem;"></i>
                 </p>
-                
-                <h3 style="color: var(--glow-blue); margin-bottom: 1.5rem; font-size: 1.6rem;"><i class="fas fa-graduation-cap"></i> EDUCATION</h3>
+
+                <h3 style="color: var(--glow-blue); margin-bottom: 1.5rem; font-size: 1.6rem;"><i
+                        class="fas fa-graduation-cap"></i> EDUCATION</h3>
                 <div style="margin-bottom: 2rem;">
                     <strong style="color: var(--text-light); font-size: 1.2rem;">Egyptian Chinese University</strong>
-                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Bachelor of Computers and Information Systems | CGPA: 3.34</p>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Bachelor of Computers and Information
+                        Systems | CGPA: 3.34</p>
                     <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.3rem;">Expected 2027</p>
                 </div>
                 <div>
                     <strong style="color: var(--text-light); font-size: 1.2rem;">Harbin Institute of Technology</strong>
-                    <p style="color: var(--text-muted); margin-top: 0.5rem;">AI: Leading the Frontier Summer Course | July 2025</p>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">AI: Leading the Frontier Summer Course |
+                        July 2025</p>
                 </div>
 
                 <!--<h3 style="color: var(--glow-blue); margin: 2rem 0 1.5rem; font-size: 1.6rem;"><i class="fas fa-chart-line"></i> PROFICIENCY LEVELS</h3>
@@ -1199,24 +1262,26 @@
                     <div class="company">ElevvoPathways – Cairo, Egypt</div>
                     <div class="date">September 2025 – October 2025</div>
                     <ul>
-                        <li>Applied TensorFlow to build and test machine learning models for predictive tasks</li>
-                        <li>Preprocessed and cleaned datasets using Pandas and NumPy for accurate analysis</li>
-                        <li>Conducted feature engineering and selection to improve model performance</li>
-                        <li>Evaluated models with metrics such as accuracy, precision, recall, and F1-score</li>
-                        <li>Visualized results using Matplotlib / Seaborn to present insights clearly</li>
-                        <li>Implemented basic neural network architectures for classification problems</li>
+                        <li>Developed and trained neural network models using TensorFlow for classification tasks,
+                            conducting feature engineering and model optimization to improve predictive performance</li>
+                        <li>Preprocessed and analyzed datasets using Pandas and NumPy, implementing comprehensive
+                            evaluation metrics (accuracy, precision, recall, F1-score) for model validation</li>
+                        <li>Created data visualizations with Matplotlib/Seaborn and documented technical workflows to
+                            support project knowledge sharing and team collaboration</li>
                     </ul>
                 </div>
 
                 <div class="timeline-item">
-                    <h3>Technical Operator</h3>
-                    <div class="company">Mideast Communication Systems – New Cairo</div>
+                    <h3>Technical Operator (Contract)</h3>
+                    <div class="company">Mideast Communication Systems – New Cairo, Cairo</div>
                     <div class="date">October 2024 – November 2024</div>
                     <ul>
-                        <li>Installed and tested new equipment and performed routine maintenance</li>
-                        <li>Troubleshot network connections, software applications, and hardware</li>
-                        <li>Collaborated with teams to meet deadlines and project objectives</li>
-                        <li>Conducted testing of software and systems to ensure reliability</li>
+                        <li>Performed installation, configuration, and routine maintenance of network equipment,
+                            ensuring optimal system performance and reliability</li>
+                        <li>Diagnosed and resolved technical issues across network connections, hardware components, and
+                            software applications through systematic troubleshooting</li>
+                        <li>Collaborated with technical teams to deliver projects on schedule while conducting quality
+                            assurance testing for system validation</li>
                     </ul>
                 </div>
 
@@ -1234,7 +1299,7 @@
 
                 <div class="timeline-item">
                     <h3>Instructor</h3>
-                    <div class="company">Gravity for Sports & Entertainment – Cairo</div>
+                    <div class="company">Gravity for Sports & Entertainment – Cairo, Egypt</div>
                     <div class="date">October 2023 – June 2024</div>
                     <ul>
                         <li>Supervised games and monitored the health and safety of guests</li>
@@ -1250,7 +1315,9 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <h3><i class="fas fa-brain"></i> Student Score Prediction Model</h3>
-                    <p style="color: var(--text-muted); line-height: 1.8;">Designed and implemented machine learning models in TensorFlow to predict outcomes from real-world datasets. Enhanced accuracy through advanced data preprocessing, feature engineering, and hyperparameter tuning.</p>
+                    <p style="color: var(--text-muted); line-height: 1.8;">Designed and implemented machine learning
+                        models in TensorFlow to predict outcomes from real-world datasets. Enhanced accuracy through
+                        advanced data preprocessing, feature engineering, and hyperparameter tuning.</p>
                     <div class="tech-tags">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">TensorFlow</span>
@@ -1258,14 +1325,16 @@
                         <span class="tech-tag">NumPy</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/E11SH/Student-Score-Prediction-Model" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                        <!--<a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>"-->
+                        <a href="https://github.com/E11SH/Student-Score-Prediction-Model" class="project-link"><i
+                                class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <h3><i class="fas fa-traffic-light"></i> Traffic Sign Recognition</h3>
-                    <p style="color: var(--text-muted); line-height: 1.8;">Built a Convolutional Neural Network (CNN) for image classification tasks. Conducted model training, evaluation, and optimization using metrics like accuracy, precision, recall, and F1-score.</p>
+                    <p style="color: var(--text-muted); line-height: 1.8;">Built a Convolutional Neural Network (CNN)
+                        for image classification tasks. Conducted model training, evaluation, and optimization using
+                        metrics like accuracy, precision, recall, and F1-score.</p>
                     <div class="tech-tags">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">CNN</span>
@@ -1273,14 +1342,52 @@
                         <span class="tech-tag">OpenCV</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/E11SH/Traffic-Sign-Recognition" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                        <!--<a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>"-->
+                        <a href="https://github.com/E11SH/Traffic-Sign-Recognition" class="project-link"><i
+                                class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3><i class="fas fa-heartbeat"></i> Kidney Chronic Disease Classification</h3>
+                    <p style="color: var(--text-muted); line-height: 1.8;">Comprehensive ML system for predicting
+                        chronic kidney disease using multiple classification models including Random Forest, SVM, and
+                        KNN. Features a full-stack web application with researcher mode for data analysis and patient
+                        predictions.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">HTML/CSS/JS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/E11SH/Kidney-Chronic-Disease" class="project-link"><i
+                                class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3><i class="fas fa-film"></i> Movie Recommendation System</h3>
+                    <p style="color: var(--text-muted); line-height: 1.8;">Built a recommendation system using the
+                        MovieLens 100K dataset. Implemented collaborative filtering (user-based and item-based) and
+                        matrix factorization (SVD) to suggest top-rated unseen movies with Precision at K evaluation.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">SVD</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/E11SH/Movie-Recommendation-System-Description"
+                            class="project-link"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <h3><i class="fas fa-chart-bar"></i> Loan Approval Prediction</h3>
-                    <p style="color: var(--text-muted); line-height: 1.8;">Developed an interactive dashboard to visualize model performance and dataset trends. Utilized Matplotlib, Seaborn, and Pandas to generate automated reports and support decision-making.</p>
+                    <p style="color: var(--text-muted); line-height: 1.8;">Developed an interactive dashboard to
+                        visualize model performance and dataset trends. Utilized Matplotlib, Seaborn, and Pandas to
+                        generate automated reports and support decision-making.</p>
                     <div class="tech-tags">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">Pandas</span>
@@ -1288,8 +1395,60 @@
                         <span class="tech-tag">Seaborn</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/E11SH/Loan-Approval-Prediction-Description" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                        <!--<a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>"-->
+                        <a href="https://github.com/E11SH/Loan-Approval-Prediction-Description" class="project-link"><i
+                                class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3><i class="fas fa-users"></i> Customer Segmentation</h3>
+                    <p style="color: var(--text-muted); line-height: 1.8;">Applied K-Means clustering to segment
+                        customers from the Mall Customers dataset based on income and spending score. Identified
+                        distinct personas such as high-value targets and frugal shoppers for targeted marketing
+                        strategies.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">K-Means</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Matplotlib</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/E11SH/Customer-Segmentation" class="project-link"><i
+                                class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3><i class="fas fa-shield-alt"></i> Intrusion Detection System</h3>
+                    <p style="color: var(--text-muted); line-height: 1.8;">Developed a machine learning-based network
+                        intrusion detection system to identify and classify malicious network traffic. Implemented
+                        multiple ML algorithms for anomaly detection and threat classification.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Cybersecurity</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/E11SH/Intrusion-Detection-System" class="project-link"><i
+                                class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3><i class="fas fa-home"></i> RENTHUB</h3>
+                    <p style="color: var(--text-muted); line-height: 1.8;">Full-stack property rental management
+                        platform with modern UI/UX design. Features property listings, user authentication, search
+                        functionality, and interactive dashboards for property owners and renters.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/E11SH/RENTHUB" class="project-link"><i class="fab fa-github"></i>
+                            GitHub</a>
                     </div>
                 </div>
             </div>
@@ -1299,7 +1458,7 @@
             <h2>TECHNICAL SKILLS</h2>
             <div class="skills-grid">
                 <div class="card skill-category">
-                    <h3><i class="fas fa-code"></i> PROGRAMMING LANGUAGES</h3>
+                    <h3><i class="fas fa-code"></i>LANGUAGES</h3>
                     <ul>
                         <li><i class="fab fa-cuttlefish"></i> C++</li>
                         <li><i class="fab fa-python"></i> Python</li>
@@ -1334,6 +1493,33 @@
                         <li><i class="fas fa-file-word"></i> Microsoft Office</li>
                         <li><i class="fas fa-network-wired"></i> Cisco Packet Tracer</li>
                         <li><i class="fas fa-cogs"></i> N8N / Make</li>
+                        <li><i class="fab fa-node-js"></i> Node.JS</li>
+                        <li><i class="fab fa-react"></i> React</li>
+                    </ul>
+                </div>
+
+                <div class="card skill-category">
+                    <h3><i class="fas fa-database"></i> DATABASE SYSTEMS</h3>
+                    <ul>
+                        <li><i class="fas fa-database"></i> MySQL</li>
+                        <li><i class="fas fa-leaf"></i> MongoDB</li>
+                    </ul>
+                </div>
+
+                <div class="card skill-category">
+                    <h3><i class="fas fa-code-branch"></i> VERSION CONTROL</h3>
+                    <ul>
+                        <li><i class="fab fa-git-alt"></i> Git</li>
+                        <li><i class="fab fa-github"></i> GitHub</li>
+                    </ul>
+                </div>
+
+                <div class="card skill-category">
+                    <h3><i class="fas fa-project-diagram"></i> TRACKS</h3>
+                    <ul>
+                        <li><i class="fas fa-brain"></i> Machine Learning</li>
+                        <li><i class="fas fa-layer-group"></i> Full-Stack</li>
+                        <li><i class="fas fa-robot"></i> AI Automation</li>
                     </ul>
                 </div>
 
@@ -1375,7 +1561,7 @@
             function type() {
                 if (!typedTextElement) return;
                 const currentText = texts[textIndex];
-                
+
                 if (isDeleting) {
                     typedTextElement.textContent = currentText.substring(0, charIndex - 1);
                     charIndex--;
@@ -1456,14 +1642,14 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
-                        
+
                         // Specifically trigger counter animation
-                        if(entry.target.id === 'stats' || entry.target.classList.contains('stats-section')) {
+                        if (entry.target.id === 'stats' || entry.target.classList.contains('stats-section')) {
                             document.querySelectorAll('.stat-number').forEach(stat => {
                                 animateCounter(stat);
                             });
                         }
-                        
+
                         observer.unobserve(entry.target);
                     }
                 });
@@ -1491,19 +1677,20 @@
                 }
             }
             createParticles();
-            
+
             // Smooth scroll for nav links
             document.querySelectorAll('nav a[href^="#"], .cta-button[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
                     const targetId = this.getAttribute('href');
                     const targetElement = document.querySelector(targetId);
-                    if(targetElement) {
-                       targetElement.scrollIntoView({ behavior: 'smooth' });
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
                     }
                 });
             });
         });
     </script>
 </body>
+
 </html>
