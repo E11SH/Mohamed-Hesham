@@ -12,11 +12,12 @@ const GitHubPortfolio = {
 
     // Custom descriptions for specific projects
     customDescriptions: {
-        'Intrusion-Detection-System': 'Real-time network security monitoring system designed to detect and analyze malicious activities including port scanning, DoS attacks, and ARP spoofing. Features a modern web-based dashboard with live monitoring, instant threat alerts categorized by severity, traffic analytics, and interactive controls with theme switching.',
+        'Intrusion-Detection-System': 'Modeled network threat detection as a real-time classification problem, categorizing traffic into attack types (port scanning, DoS, ARP spoofing) using severity-based decision logic. Built a live monitoring dashboard with instant threat alerts, aggregated attack statistics, and interactive traffic visualization.',
         'RENTHUB': 'Full-stack property rental management platform with modern UI/UX design. Features comprehensive property listings, user authentication, advanced search functionality, and interactive dashboards for both property owners and renters to manage their rental activities.',
         'Kidney-Chronic-Disease': 'Comprehensive ML system for predicting chronic kidney disease using multiple classification models including Random Forest, SVM, and KNN. Features a full-stack web application with researcher mode for data analysis and patient predictions, built with Flask backend and responsive frontend.',
-        'Studify': 'AI-powered learning platform designed to revolutionize education by enabling students to study any subject, anytime, anywhere. Features intelligent automation workflow using n8n, automated processing pipelines for user queries, AI-driven personalized learning content, and scalable architecture supporting real-time student interactions and adaptive learning experiences.',
-        'Facial-Recognition': 'Advanced computer vision system for face detection and recognition using deep learning techniques. Implements facial feature extraction, face matching algorithms, and real-time recognition capabilities for security and authentication applications.'
+        'Studify': 'Architected the core AI intelligence layer using N8N automation workflows, transforming unstructured student queries into personalized, contextually relevant learning content. Built adaptive processing pipelines connecting multiple AI APIs and NLP services for real-time query understanding, content retrieval, and response generation at scale.',
+        'Facial-Recognition': 'Advanced computer vision system for face detection and recognition using deep learning techniques. Implements facial feature extraction, face matching algorithms, and real-time recognition capabilities for security and authentication applications.',
+        'Colon-Cancer-Detection': 'Automated cancer detection from histopathological images using Vision Transformers (ViT) for multi-class classification. Designing a multimodal architecture fusing structured clinical data with imaging features, with LLM-based treatment planning via RAG for evidence-grounded clinical recommendations. [In Progress]'
     },
 
     // Custom tech tags for specific projects
@@ -26,6 +27,7 @@ const GitHubPortfolio = {
         'Kidney-Chronic-Disease': ['Python', 'Scikit-learn', 'Random Forest', 'SVM', 'KNN', 'Flask'],
         'Studify': ['HTML/CSS/JS', 'Node.js', 'Express', 'n8n', 'AI Integration', 'MySQL'],
         'Facial-Recognition': ['Python', 'OpenCV', 'Deep Learning', 'Computer Vision', 'Face Detection'],
+        'Colon-Cancer-Detection': ['Python', 'Vision Transformers', 'PyTorch', 'RAG', 'Medical Imaging'],
         'Student-Score-Prediction-Model': ['Python', 'TensorFlow', 'Pandas', 'NumPy', 'Scikit-learn'],
         'Traffic-Sign-Recognition': ['Python', 'CNN', 'TensorFlow', 'OpenCV', 'Keras'],
         'Movie-Recommendation-System-Description': ['Python', 'Pandas', 'Scikit-learn', 'SVD', 'Collaborative Filtering'],
@@ -183,6 +185,7 @@ const GitHubPortfolio = {
         if (topics.includes('data-science') || topics.includes('analytics')) return 'chart-bar';
 
         // Check by name keywords
+        if (name.includes('colon') || name.includes('cancer')) return 'microscope';
         if (name.includes('kidney') || name.includes('disease') || name.includes('health')) return 'heartbeat';
         if (name.includes('traffic') || name.includes('sign') || name.includes('recognition')) return 'traffic-light';
         if (name.includes('movie') || name.includes('recommendation')) return 'film';
