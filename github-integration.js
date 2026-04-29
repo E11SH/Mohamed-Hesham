@@ -110,60 +110,54 @@ const GitHubPortfolio = {
      * Display projects in the portfolio
      */
     displayProjects(repos) {
-        const projectsGrid = document.querySelector('.projects-grid');
-        if (!projectsGrid) return;
+        const grid = document.querySelector('.projects-bento');
+        if (!grid) return;
 
-        // Clear existing projects
-        projectsGrid.innerHTML = '';
+        grid.innerHTML = '';
 
-        // Create project cards
-        repos.forEach(repo => {
-            const card = this.createProjectCard(repo);
-            projectsGrid.appendChild(card);
+        repos.forEach((repo, i) => {
+            const card = this.createProjectCard(repo, i);
+            grid.appendChild(card);
         });
 
-        // Trigger animations
         this.triggerAnimations();
     },
 
     /**
      * Create a project card element
      */
-    createProjectCard(repo) {
-        const card = document.createElement('div');
-        card.className = 'project-card';
+    createProjectCard(repo, index) {
+        const card = document.createElement('article');
 
-        // Determine icon based on language or topics
+        // Assign bento sizing class
+        let sizeClass = '';
+        if (index === 0) sizeClass = 'featured';
+        else if (index === 1) sizeClass = 'p-5';
+        else if (index >= 2 && index <= 4) sizeClass = 'p-4';
+        else sizeClass = 'p-3';
+
+        card.className = `proj ${sizeClass}`;
+
         const icon = this.getProjectIcon(repo);
-
-        // Get tech tags
         const techTags = this.getTechTags(repo);
-
-        // Use custom description if available, otherwise use GitHub description
         const description = this.customDescriptions[repo.name] || repo.description || 'A project showcasing my development skills.';
 
         card.innerHTML = `
-            <h3><i class="fas fa-${icon}"></i> ${repo.name.replace(/-/g, ' ')}</h3>
-            <p style="color: var(--text-muted); line-height: 1.8;">${description}</p>
-            <div class="tech-tags">
-                ${techTags.map(tag => `<span class="tech-tag">${tag}</span>`).join('')}
+            <h3 class="proj-title"><i class="fas fa-${icon}" aria-hidden="true"></i> ${repo.name.replace(/-/g, ' ')}</h3>
+            <p class="proj-desc">${description}</p>
+            <div class="tags">
+                ${techTags.map(t => `<span class="tag">${t}</span>`).join('')}
             </div>
-            <div class="project-links">
-                <a href="${repo.html_url}" class="project-link" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
+            <div class="proj-links">
+                <a href="${repo.html_url}" class="proj-link" target="_blank" rel="noopener">
+                    <i class="fab fa-github" aria-hidden="true"></i> GitHub
                 </a>
                 ${repo.homepage ? `
-                    <a href="${repo.homepage}" class="project-link" target="_blank">
-                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    <a href="${repo.homepage}" class="proj-link" target="_blank" rel="noopener">
+                        <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
                     </a>
                 ` : ''}
             </div>
-            ${repo.stargazers_count > 0 ? `
-                <div style="margin-top: 1rem; color: var(--text-muted); font-size: 0.85rem;">
-                    <i class="fas fa-star" style="color: var(--glow-blue);"></i> ${repo.stargazers_count} stars
-                    ${repo.forks_count > 0 ? `<i class="fas fa-code-branch" style="margin-left: 1rem; color: var(--glow-blue);"></i> ${repo.forks_count} forks` : ''}
-                </div>
-            ` : ''}
         `;
 
         return card;
@@ -302,13 +296,15 @@ const GitHubPortfolio = {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
+                    const idx = [...entry.target.parentElement.children].indexOf(entry.target);
+                    entry.target.style.animationDelay = (idx * 60) + 'ms';
                     entry.target.classList.add('visible');
                     observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.1 });
+        }, { threshold: 0.07 });
 
-        document.querySelectorAll('.project-card').forEach(card => {
+        document.querySelectorAll('.proj').forEach(card => {
             observer.observe(card);
         });
     },
